@@ -1,0 +1,57 @@
+body {
+  font-family: Impact, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: 
+  url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614641527_36-p-fon-gta-dlya-fotoshopa-37.jpg);
+  width: auto;
+  background-attachment: fixed;
+}
+
+
+header h1 {
+  margin: 0;
+  margin-left: 35;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+}
+
+header h2 {
+  font-size: 20px;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+  margin: 0;
+}
+
+list {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ main {
+    padding: 100px;
+    background-image: url();
+    background-attachment: fixed;
+  }
+
+  form{
+    color:#b400b4;
+    margin-right: 30PX;
+    text-align: center;
+    font-size:x-large;
+    margin-right: 50px;
+  }
+  
+    footer {
+      background-color: #333;
+      color: #00BF63;
+      padding: 15px;
+      text-align: center;
+  }

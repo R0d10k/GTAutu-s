@@ -1,0 +1,109 @@
+body {
+  font-family: Impact, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: 
+  url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614641527_36-p-fon-gta-dlya-fotoshopa-37.jpg);
+  width: auto;
+  background-attachment: fixed;
+}
+
+
+header h1 {
+  margin: 0;
+  margin-left: 35;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+}
+
+header h2 {
+  font-size: 20px;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+  margin: 0;
+}
+
+list {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  
+navbar ul{
+  list-style: none;
+  display: flex;
+  color: #fff;
+  padding:0;
+  text-decoration: none;
+}
+  
+navbar ul li {
+  margin-right: 15px;
+}
+  
+navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+  
+navbar ul li a:hover {
+  color: lime;
+}
+
+main {
+    padding: 100px;
+  }
+  
+
+.cars-info h1 {
+	text-align: center;
+}
+
+.cars-info ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.cars-info li {
+	width: calc(33.33% - 10px);
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+.cars-info img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.cars-info h2 {
+	margin-top: 10px;
+}
+
+.cars-info p {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+footer {
+	background-color: #333;
+	color: #00BF63;
+	padding: 15px;
+	text-align: center;
+}
