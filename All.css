@@ -3,6 +3,27 @@ body {
   margin: 0;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#text {
+  background: linear-gradient(45deg, #00BF63, #248f5d, rgb(0, 253, 144));
+  background-size: 300% 300%;
+  animation: gradient 7s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 header {
   background-image: 
   url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614641527_36-p-fon-gta-dlya-fotoshopa-37.jpg);
@@ -26,6 +47,10 @@ header h2 {
   background-image: linear-gradient(90deg, #00BF63, #03763E);
   margin: 0;
 }
+
+img {
+  display: block;
+  }
 
 list {
   background-color: rgba(0,0,0,0.4);
@@ -62,43 +87,76 @@ main {
   }
   
 
-.cars-info h1 {
-	text-align: center;
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
-.cars-info ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.card {
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  margin-bottom: 20px;
 }
 
-.cars-info li {
-	width: calc(33.33% - 10px);
-	margin-bottom: 20px;
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-	text-align: center;
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
 }
 
-.cars-info img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
-	height: auto;
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
-.cars-info h2 {
-	margin-top: 10px;
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
 }
 
-.cars-info p {
-	margin-top: 10px;
-	font-size: 14px;
-	line-height: 1.4;
+.card-front {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: #00BF63;
+  transform: rotateY(180deg);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-family: Impact, sans-serif;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: Impact, sans-serif;
+}
+.card-back h4 {
+  
+  font-family: Impact, sans-serif;
+  
 }
 
 footer {

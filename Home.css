@@ -3,8 +3,29 @@ body {
   margin: 0;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#text {
+  background: linear-gradient(45deg, #00BF63, #248f5d, rgb(0, 253, 144));
+  background-size: 300% 300%;
+  animation: gradient 7s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 header {
-  padding: 80px;
+  padding: 200px;
   text-align: center;
   background: #1abc9c;
   color: white;
@@ -27,16 +48,22 @@ header h2 {
   color: darkgreen;
 }
 
-.main {
-  padding: 20px;
+
+img {
+display: block;
 }
 
-.main h3 {
+.container {
+  padding: auto;
+  max-width: 100%;
+}
+
+.container h3 {
   font-family: Times New Roman, sans-serif;
   margin: 10px;
   }
 
-  .main h4 {
+  .container h4 {
     font-family: Times New Roman, sans-serif;
     margin: 10px;
     }
@@ -48,16 +75,6 @@ hr {
 	height: 6px;
 	border: none;
 	background: linear-gradient(45deg, #28944a7d, #27a45f);
-}
-
-art {
-  margin-bottom: 50px;
-  width: calc(0 - 100px);
-}
-
-art img {
-  width: 100%;
-  height: auto;
 }
 
 .border {

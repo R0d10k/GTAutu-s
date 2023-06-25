@@ -3,6 +3,28 @@ body {
   margin: 0;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#text {
+  background: linear-gradient(45deg, #00BF63, #248f5d, rgb(0, 253, 144));
+  background-size: 300% 300%;
+  animation: gradient 7s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 header {
   background-image: 
   url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614641527_36-p-fon-gta-dlya-fotoshopa-37.jpg);
@@ -27,7 +49,11 @@ header h2 {
   margin: 0;
 }
 
-list {
+img {
+  display: block;
+  }
+
+.list {
   background-color: rgba(0,0,0,0.4);
   display: flex;
   padding: 30px 30px;
